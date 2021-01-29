@@ -1,0 +1,34 @@
+.photo {
+  float: left;
+  box-shadow: 0px 0px 15px 5px lightgrey;
+}
+
+.intro {
+    float: left;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+/* logo with hyperlink */
+.logo_link {
+  float: left;
+  font-size: 16px; 
+  margin-top: 5px;
+  margin-right: 30px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left center;
+}
+
+.logo_link a {
+  color: black
+}
+
+.github_logo {
+  background-image: url(../assets/github.png);
+}
+
+.scholar_logo {
+  background-image: url(../assets/scholar.png);
+}
