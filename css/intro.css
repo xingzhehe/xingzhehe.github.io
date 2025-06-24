@@ -34,6 +34,10 @@
   background-image: url(../assets/scholar.png);
 }
 
+.linkedin_logo {
+  background-image: url(../assets/linkedin_logo.png);
+}
+
 .cv_logo {
   background-image: url(../assets/cv_logo.png);
 }
