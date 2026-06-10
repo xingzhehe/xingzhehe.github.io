@@ -29,7 +29,7 @@
 }
 
 .pub-scholar-link:hover {
-  color: var(--accent);
+  color: var(--link-hover);
 }
 
 .pub-card {
@@ -109,8 +109,8 @@
 }
 
 .pub-venue a:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
 }
 
 .pub-authors {
@@ -143,9 +143,9 @@
 }
 
 .pub-actions a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-  background: var(--accent-soft);
+  color: var(--link-hover);
+  border-color: var(--link-hover);
+  background: var(--bg-soft);
 }
 
 @media (max-width: 720px) {

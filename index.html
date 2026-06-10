@@ -32,10 +32,6 @@
                 <a href="#about">About</a>
                 <a href="#industry">Industry</a>
                 <a href="#publications">Publications</a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                </button>
             </div>
         </div>
     </nav>
@@ -51,7 +47,7 @@
                 <div class="hero-text">
                     <h1 class="hero-name">Xingzhe He</h1>
                     <p class="hero-tagline">
-                        Research Tech Lead at <a href="https://www.descript.com/" target="_blank" rel="noopener">Descript</a>,
+                        I'm the technical lead for AI Research at <a href="https://www.descript.com/" target="_blank" rel="noopener">Descript</a>,
                         leading video &amp; audio generation research and multi-modal understanding.
                     </p>
                     <p class="hero-sub">
@@ -85,7 +81,7 @@
         <section class="section" id="about">
             <h2 class="section-title">About</h2>
             <div class="prose">
-                <p>I am a Research Tech Lead at <a href="https://www.descript.com/" target="_blank" rel="noopener">Descript</a>, where I lead teams working on video and audio generation research, and on multi-modal understanding that helps creators produce content at the speed of thought.</p>
+                <p>I'm the technical lead for AI Research at <a href="https://www.descript.com/" target="_blank" rel="noopener">Descript</a>, where I lead teams working on video and audio generation research, and on multi-modal understanding that helps creators produce content at the speed of thought.</p>
 
                 <p>I completed my PhD at <a href="https://www.ubc.ca/" target="_blank" rel="noopener">the University of British Columbia</a>, advised by Prof. <a href="https://www.cs.ubc.ca/~rhodin/" target="_blank" rel="noopener">Helge Rhodin</a>. My research centers on computer vision, machine learning, and generative models — for images, shapes, and physics.</p>
 
@@ -95,21 +91,21 @@
 
         <!-- INDUSTRY RESEARCH & SYSTEMS -->
         <section class="section" id="industry">
-            <h2 class="section-title">Productionized Industry Research &amp; Systems</h2>
-
-            <article class="industry-card">
-                <div class="industry-thumb"><video src="assets/lipsync.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-                <div class="industry-body">
-                    <h3 class="industry-title">Foundational Generative Models for LipSync</h3>
-                    <p class="industry-description">A state-of-the-art lipsync generation stack from scratch, including highly compressed video VAEs and diffusion generators. The system improved audio-visual alignment, identity preservation, and fine facial dynamics across challenging poses. <a href="https://share.descript.com/view/ny7qBNmjE8k" target="_blank" rel="noopener">Example videos</a>.</p>
-                </div>
-            </article>
+            <h2 class="section-title">Productionized Research</h2>
 
             <article class="industry-card">
                 <div class="industry-thumb industry-thumb-contain"><video src="assets/uvmv2.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
                 <div class="industry-body">
                     <h3 class="industry-title">Audio Inpainting Models</h3>
                     <p class="industry-description">A state-of-the-art audio inpainting model from scratch, including highly compressed audio VAEs and diffusion generators. The system not only preserves the identity and talking pace, but also room tone, including background noise and music. <a href="https://descriptinc.github.io/uvm-v2/" target="_blank" rel="noopener">Example audio clips</a>.</p>
+                </div>
+            </article>
+
+            <article class="industry-card">
+                <div class="industry-thumb"><video src="assets/lipsync.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+                <div class="industry-body">
+                    <h3 class="industry-title">Foundational Generative Models for LipSync</h3>
+                    <p class="industry-description">A state-of-the-art lipsync generation stack from scratch, including highly compressed video VAEs and diffusion generators. The system improved audio-visual alignment, identity preservation, and fine facial dynamics across challenging poses. <a href="https://share.descript.com/view/ny7qBNmjE8k" target="_blank" rel="noopener">Example videos</a>.</p>
                 </div>
             </article>
 
@@ -335,22 +331,6 @@
     <script>
         // Year
         document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Theme toggle (persisted)
-        (function() {
-            const root = document.documentElement;
-            const stored = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const initial = stored || (prefersDark ? 'dark' : 'light');
-            root.setAttribute('data-theme', initial);
-
-            const btn = document.getElementById('theme-toggle');
-            btn.addEventListener('click', () => {
-                const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-                root.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
-            });
-        })();
 
         // Nav shadow on scroll
         (function() {
