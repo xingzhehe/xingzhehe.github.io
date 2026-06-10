@@ -41,20 +41,11 @@
 .nav-name::before {
   content: '';
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 14px;
+  height: 1px;
   background: var(--accent);
   margin-right: 10px;
   vertical-align: middle;
-  box-shadow: 0 0 0 0 var(--accent);
-  animation: pulse 2.4s var(--ease) infinite;
-}
-
-@keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); }
-  70%  { box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 0%, transparent); }
-  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
 }
 
 .nav-links {
@@ -105,7 +96,7 @@
 @media (max-width: 640px) {
   .nav-inner { padding: 0 18px; }
   .nav-links a { padding: 8px 8px; font-size: 13.5px; }
-  .nav-links a[href="#research"] { display: none; }
+  .nav-links a[href="#industry"] { display: none; }
 }
 
 @media (max-width: 460px) {
